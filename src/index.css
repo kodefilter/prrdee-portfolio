@@ -1,14 +1,138 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Questrial|Vollkorn:400,700");
+
+body,
+html {
+  height: calc(100% - 2em);
   margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Vollkorn", serif;
+  font-family: "Questrial", sans-serif;
+}
+body {
+  background-color: #96ceb4;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+aside {
+  color: #fff;
+  display: grid;
+  grid-template-columns: auto 40px;
+  padding: 2em;
+}
+
+img {
+  width: 40px;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #fff;
+}
+
+.active {
+  position: absolute;
+  display: block;
+  background: #fff;
+  width: 50%;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+ul {
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+  display: block;
+  padding: 1.5em 3em;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: #000;
+}
+
+main {
+  background-color: #fff;
+  padding: 1em 1.5em;
+  height: 80%;
+}
+
+h1 {
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-columns: 20% auto;
+    padding: 2em;
+  }
+
+  img {
+    display: none;
+  }
+
+  
+  aside {
+    background: #ffeead;
+    grid-template-columns: auto;
+    grid-template-rows: 20% auto;
+    padding: 0;
+  }
+
+  main {
+    padding: 4em;
+    height: auto;
+    }
+
+
+  #avatar {
+    border-radius: 50%;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    margin: 2em auto 1em auto;
+    display: block;
+  }
+
+  figcaption {
+    text-align: center;
+    color: #000;
+  }
+
+  ul {
+    display: block;
+    margin-top: 2em;
+    position: relative !important;
+    background: none !important;
+    width: 100% !important;
+  }
+
+  ul li a:hover {
+    background-color: #fff;
+
+  }
+
+  nav {
+    background: none;
+  }
+
+  h1 {
+    font-size: 3em;
+    margin-top: 2em;
+  }
+
+
 }
